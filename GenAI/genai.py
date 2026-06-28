@@ -12,7 +12,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.compose import ColumnTransformer
 
 
-genai.configure(api_key="AIzaSyAyv64aLWQw6wvugGGduj99XPoQl5-N33g")
+genai.configure(api_key="YOUR_API_KEY_HERE")
 model = genai.GenerativeModel("gemini-2.0-flash-exp")
 def load_data():
     products = ModelProduct.objects.all()
